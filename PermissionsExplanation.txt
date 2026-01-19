@@ -1,0 +1,17 @@
+1. Explain the different types of permissions you assigned (SELECT, INSERT, UPDATE, DELETE) and what each allows a user to do.
+SELECT: Allows reading data
+INSERT: Allows adding new rows
+UPDATE: Allows modifying existing data
+DELETE: Allows removing rows
+
+2. Describe the concept of schema-level permissions vs. table-level permissions.
+Schema-level permissions grants permissions to all of the objects within the schema, while table-level permissions are only applied to an individual table, which allow more fine-tuned access control
+
+3. Explain how column-level permissions work and why they might be useful.
+Column-level permissions work by restricting access to specific columns in the table, which allows the admins to give different permissions on sensitive fields without exposing the entire table
+
+4. Discuss the principle of least privilege and how it's applied in this RBAC setup.
+PoLP states that users should given only the minimum permissions necessary to perform their job duties. In this RBAC setup, permissions are assigned to roles based on job responsibilities, and users are assigned to those roles, which makes sure that users can access only the data and actions required for their role.
+
+5. Explain the potential security benefits of using roles instead of assigning permissions directly to users.
+Some potential security benefits of using roles instead of assigning permissions directly to users is that it simplifies permissions management by making sure there are consistent permissions across users with the same responsibilities, which make it easier to give and change access, and limits the risk of someone getting more access than needed.
